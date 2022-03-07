@@ -7,7 +7,7 @@ const axios = require('axios')
 app.use(cors())
 
 app.get('/', async (req, res) => {
-    // response é a respodta do axios que estou tirando data de dentro do response 
+    // res é a resposta do axios que estou tirando data de dentro do res 
     const { data } = await axios('https://jsonplaceholder.typicode.com/users')
     //console.log(data)
 
